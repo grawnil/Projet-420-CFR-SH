@@ -1,0 +1,23 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558 
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "ROS: catkin_make",
+            "type": "shell",
+            "command": "source /opt/ros/noetic/setup.bash && catkin_make -j4 -DCMAKE_BUILD_TYPE=RelWithDebInfo",
+            "args": [],
+            "problemMatcher": {
+                "base": "$gcc",
+                "fileLocation": [
+                    "absolute"
+                ]
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
